@@ -13,5 +13,8 @@ class Main {
     sLL.traverseSinglyLinkedList();
 
     sLL.searchNode(10);
+
+    sLL.deleteNode(2);
+    sLL.traverseSinglyLinkedList();
   }
 }   
