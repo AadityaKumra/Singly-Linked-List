@@ -66,4 +66,19 @@ public class Singlylinkedlist{
     }
     System.out.println("\n"); 
 }
+  //Search for a node
+  boolean searchNode(int nodeValue){
+    if(head!=null){
+      Node tempNode=head;
+      for(int i=0;i<size;i++){
+        if(tempNode.value==nodeValue){
+          System.out.println("Found the node at location "+i);
+          return true;
+        }
+        tempNode=tempNode.next;
+      }
+    }
+    System.out.println("Node not found.");
+    return false;
+  }
 }
